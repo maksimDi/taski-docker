@@ -34,3 +34,4 @@ class TaskAPITest(TestCase):
         """Тест получения списка задач."""
         response = self.client.get('/api/tasks/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
